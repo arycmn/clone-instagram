@@ -21,31 +21,152 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 body{
+	margin: auto;
+	font-family: Helvetica,Arial,sans-serif;
+	color: #262626;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 935px;
 
 }
 
 /*TOPO*/
 header{
-	
+	width: 100%;
+	border-bottom: 1px solid #262626;
 }
 
 /*RODAPÉ*/
 footer{
-
+	display: flex;
+	width: 100%;
+	align-content: center;
+	justify-content: space-evenly;
+	font-size: 0.8rem;
 }
+
+footer div p {
+	margin: 0;
+}
+
+footer nav a{
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: blue;
+	
+	
+}
+
+	
+	
 
 /*PÁGINA INICIAL*/
 main{
-	
+	width: 935px;
 }
+
+	.profile-photo figure img{
+		border-radius: 50%;
+	}
+
 	main .profile-content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.profile-info {
+		width: 60%;
+	}
+	.profile-data {
+		display: flex;
+		align-content: space-around;
+	}
+	.profile-info ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.profile-data p{
+		margin-right: 10px;
+	}
+
+	main .highlighted-stories ul{
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		text-align: center;
 
 	}
 
-	main .highlighted-stories{
-
+	.highlighted-stories ul li {
+		order: 1;
+	}
+	
+	main .highlighted-stories ul li figure img {
+		width: 77px;
+		height: 77px;
+		border-radius: 50%;
 	}
 
 	main .profile-posts{
+		border-top: 1px solid #262626;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
+	.profile-posts nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	.profile-posts nav a {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		color: #262626;
+	}
+
+	.profile-posts ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+	.profile-posts ul li{
+		width: 293px;
+		height: 293px;
+	}
+	.profile-posts ul li img{
+		width: 100%;
+	}
+
+	@media (max-width: 800px ){
+		main,header{
+			width: 100%;
+		}
+		body {
+			width: 100vw;
+		}
+		footer div p {
+			margin: 0;
+			font-size: 0.6rem;
+		}
+		
+		footer nav a{
+			margin-left: 1px;
+			margin-right: 1px;
+			font-size: 0.6rem;
+			
+		}
+		
 	}
